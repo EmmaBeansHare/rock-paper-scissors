@@ -183,6 +183,10 @@ h1{
         text-align: center;
     }
 
+    .crName{
+        margin-bottom: 60px;
+    }
+
     #playerDisplay, #computerDisplay{
         font-size: 0.9rem;
     }
