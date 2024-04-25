@@ -17,10 +17,10 @@ window.location.reload();
 
 function endGame(playerScore, computerScore){
     if(playerScore === 5){
-        resultDisplay.textContent = "You won the game!! Wanna go again?"
+        resultDisplay.textContent = "You won the game!! Rematch?"
         restartBtn.style.visibility = 'visible';
     }else if(computerScore === 5){
-        resultDisplay.textContent = "You lost the game... wanna go again?"
+        resultDisplay.textContent = "You lost the game... Rematch?"
         restartBtn.style.visibility = 'visible';
     };
 }

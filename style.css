@@ -1,13 +1,21 @@
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: rgb(41, 13, 53);
     color: white;
+    overflow-x: hidden;
+}
+
+br{
+    display: none;
 }
 
 h1{
-    margin-bottom: 170px;
+    margin-top: 60px;
+    margin-bottom: 150px;
     font-family: "Megrim";
     font-size: 4rem;
     font-weight: 500;
@@ -53,7 +61,7 @@ h1{
 }
 
 #restartBtn{
-    margin-top: 80px;
+    margin-top: 60px;
     padding: 10px;
     background-color: transparent;
     color: white;
@@ -96,7 +104,7 @@ h1{
 }
 
 .choices{
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     gap: 100px;
 }
@@ -118,6 +126,29 @@ h1{
     0 0 20px rgb(255, 255, 255);
 }
 
+.crName{
+    font-family: "Megrim";
+    position: absolute;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.757);
+}
+
+.crName a{
+    text-decoration: underline 1px rgba(255, 255, 255, 0.722);
+    color: rgba(255, 255, 255, 0.757);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.crName a:hover{
+    color: white;
+    text-shadow:
+    0 0 5px white,
+    0 0 10px white;
+}
+
+/*==== COLOR CHANGERS OF RESULT DISPLAY ====*/
+
 .greenShadow{
     color: white;
     text-shadow:
@@ -138,5 +169,111 @@ h1{
     0 0 25px red,
     0 0 30px red
     !important;
+}
+
+/*====MEDIA QUERIES====*/
+
+@media screen and (max-width:480px){
+    br{
+        display: inline;
+    }
+    
+    h1{
+        margin-top: 30px;
+        margin-bottom: 70px;
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    #playerDisplay, #computerDisplay{
+        font-size: 0.9rem;
+    }
+
+    #resultDisplay{
+        margin: 50px 0;
+        font-size: 1.9rem;
+    }
+
+    .scoreDisplay{
+        font-size: 1rem;
+    }
+
+    #restartBtn{
+        font-size: 1.3rem;
+    }
+
+    .choices{
+        gap: 0;
+        padding: -20px;
+    }
+
+    .choices button{
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:580px){
+    h1{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-size: 2.3rem;
+    }
+
+    #playerDisplay, #computerDisplay{
+        font-size: 1.1rem;
+    }
+
+    #resultDisplay{
+        font-size: 2.1rem;
+    }
+
+    .scoreDisplay{
+        font-size: 1.1rem;
+    }
+
+    #restartBtn{
+        font-size: 1.5rem;
+    }
+
+    .choices{
+        gap: 0px;
+        padding: -10px;
+    }
+
+    .choices button{
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (min-width:581px) and (max-width:710px){
+    h1{
+        margin-top: 50px;
+        margin-bottom: 140px;
+        font-size: 2.8rem;
+    }
+
+    #playerDisplay, #computerDisplay{
+        font-size: 1.2rem;
+    }
+
+    #resultDisplay{
+        font-size: 2.2rem;
+    }
+
+    .scoreDisplay{
+        font-size: 1.2rem;
+    }
+
+    #restartBtn{
+        font-size: 1.8rem;
+    }
+
+    .choices{
+        gap: 40px;
+    }
+
+    .choices button{
+        font-size: 7.5rem;
+    }
 }
 
