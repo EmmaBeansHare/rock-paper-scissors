@@ -11,7 +11,7 @@
     700italic,800italic,900italic" rel="stylesheet" />
 </head>
 <body>
-    <h1>Rock<br> Paper<br> Scissors</h1>
+    <h1>Rock Paper Scissors</h1>
     <div id="playerDisplay">Player: </div>
     <div id="computerDisplay">Computer: </div>
     <div id="resultDisplay">Choose a weapon!</div>
@@ -26,16 +26,13 @@
     <button id="restartBtn">Rematch</button>
 
     <div class="choices">
-        <button onclick="playGame('rock')">✊</button>
-        <button onclick="playGame('paper')">✋</button>
-        <button onclick="playGame('scissors')">✌️</button>
+        <button class="rock" onclick="playGame('rock')">✊</button>
+        <button class="paper" onclick="playGame('paper')">✋</button>
+        <button class="scissors" onclick="playGame('scissors')">✌️</button>
     </div>
 
     <p class="crName">
         copyright ©
-        <script>
-            document.write(new Date().getFullYear())
-        </script>
         <a href="https://github.com/emmahare">emmahare</a>
     </p>
     
