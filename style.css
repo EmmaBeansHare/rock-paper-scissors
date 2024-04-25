@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(41, 13, 53);
+    color: white;
+}
+
+h1{
+    margin-bottom: 170px;
+    font-family: "Megrim";
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 15px;
+    border: 1px solid white;
+    color: white;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59), 
+    0 0 20px rgb(102, 0, 255),
+    0 0 30px rgb(102, 0, 255),
+    0 0 35px rgb(102, 0, 255),
+    0 0 40px rgb(102, 0, 255),
+    0 0 45px rgb(102, 0, 255);
+    box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59), 
+    0 0 20px rgb(102, 0, 255),
+    0 0 30px rgb(102, 0, 255),
+    0 0 35px rgb(102, 0, 255),
+    0 0 40px rgb(102, 0, 255),
+    0 0 45px rgb(102, 0, 255);
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 1.8rem;
+    font-family: "Montserrat";
+}
+
+#resultDisplay{
+    font-size: 3rem;
+    font-family: "Megrim";
+    margin: 30px 0;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgb(0, 255, 217),
+    0 0 20px rgb(0, 255, 217);
+}
+
+.scoreDisplay{
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+}
+
+#restartBtn{
+    margin-top: 80px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: "Megrim";
+    border: 1px solid white;
+    transition: ease-in-out 0.3s;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59), 
+    0 0 20px rgb(102, 0, 255),
+    0 0 30px rgb(102, 0, 255),
+    0 0 35px rgb(102, 0, 255),
+    0 0 40px rgb(102, 0, 255),
+    0 0 45px rgb(102, 0, 255);
+    box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59), 
+    0 0 20px rgb(102, 0, 255),
+    0 0 30px rgb(102, 0, 255),
+    0 0 35px rgb(102, 0, 255),
+    0 0 40px rgb(102, 0, 255),
+    0 0 45px rgb(102, 0, 255);
+    visibility: hidden;
+}
+
+#restartBtn:hover{
+    color: rgb(102, 0, 255);
+    border: 1px solid rgb(102, 0, 255);
+    text-shadow: none;
+    box-shadow: 
+    0 0 10px rgb(102, 0, 255),
+    0 0 15px rgb(102, 0, 255), 
+    0 0 20px rgb(102, 0, 255),
+    0 0 30px rgb(102, 0, 255),
+    0 0 35px rgb(102, 0, 255),
+    0 0 40px rgb(102, 0, 255),
+    0 0 45px rgb(102, 0, 255);
+}
+
+.choices{
+    margin-top: 80px;
+    display: flex;
+    gap: 100px;
+}
+
+.choices button{
+    font-size: 8.5rem;
+    min-width: 160px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.choices button:hover{
+    transform: scale(1.1);
+    text-shadow:
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255);
+}
+
+.greenShadow{
+    color: white;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59),
+    0 0 20px rgb(0, 255, 0),
+    0 0 25px rgb(0, 255, 0),
+    0 0 30px rgb(0, 255, 0)
+    !important;
+}
+
+.redShadow{
+    color: white;
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.59),
+    0 0 15px rgba(255, 255, 255, 0.59),
+    0 0 20px red,
+    0 0 25px red,
+    0 0 30px red
+    !important;
+}
+
