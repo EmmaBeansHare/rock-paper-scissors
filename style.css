@@ -15,7 +15,7 @@ br{
 
 h1{
     margin-top: 60px;
-    margin-bottom: 150px;
+    margin-bottom: -10px;
     font-family: "Megrim";
     font-size: 4rem;
     font-weight: 500;
@@ -38,6 +38,26 @@ h1{
     0 0 35px rgb(102, 0, 255),
     0 0 40px rgb(102, 0, 255),
     0 0 45px rgb(102, 0, 255);
+}
+
+.crName{
+    font-family: "Megrim";
+    color: rgba(255, 255, 255, 0.757);
+    margin-bottom: 100px;
+}
+
+.crName a{
+    text-decoration: underline 1px rgba(255, 255, 255, 0.722);
+    color: rgba(255, 255, 255, 0.757);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.crName a:hover{
+    color: white;
+    text-shadow:
+    0 0 5px white,
+    0 0 10px white;
 }
 
 #playerDisplay, #computerDisplay{
@@ -126,27 +146,6 @@ h1{
     0 0 20px rgb(255, 255, 255);
 }
 
-.crName{
-    font-family: "Megrim";
-    position: absolute;
-    bottom: 0;
-    color: rgba(255, 255, 255, 0.757);
-}
-
-.crName a{
-    text-decoration: underline 1px rgba(255, 255, 255, 0.722);
-    color: rgba(255, 255, 255, 0.757);
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-}
-
-.crName a:hover{
-    color: white;
-    text-shadow:
-    0 0 5px white,
-    0 0 10px white;
-}
-
 /*==== COLOR CHANGERS OF RESULT DISPLAY ====*/
 
 .greenShadow{
@@ -180,8 +179,7 @@ h1{
     
     h1{
         margin-top: 30px;
-        margin-bottom: 70px;
-        font-size: 2rem;
+        font-size: 1.9rem;
         text-align: center;
     }
 
@@ -191,7 +189,8 @@ h1{
 
     #resultDisplay{
         margin: 50px 0;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
+        white-space: nowrap;
     }
 
     .scoreDisplay{
@@ -203,27 +202,25 @@ h1{
     }
 
     .rock{
-        margin-right: -40px;
+        margin-right: -55px;
     }
     
     .scissors{
-        margin-left: -40px;
+        margin-left: -55px;
     }
 
     .choices{
         gap: 0px;
-
     }
 
     .choices button{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width:580px){
     h1{
         margin-top: 50px;
-        margin-bottom: 100px;
         font-size: 2.3rem;
     }
 
@@ -257,7 +254,6 @@ h1{
 @media screen and (min-width:581px) and (max-width:710px){
     h1{
         margin-top: 50px;
-        margin-bottom: 140px;
         font-size: 2.8rem;
     }
 
