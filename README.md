@@ -2,7 +2,7 @@
 
 The classic rock paper scissors game created with HTML, CSS and JS. 
 
-[Preview](https://emmahare.github.io/rock-paper-scissors/) <<<<<<
+[Preview](https://emmabeanshare.github.io/Resident-Evil/) <<<<<<
 
 Mobile-responsive: ✅
 
